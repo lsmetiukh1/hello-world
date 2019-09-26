@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "e243c46b-4954-4df7-8ed2-91c64766cb41",
+		"name": "PDP_goal2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get boards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/boards?key=35897a2d70c5f9be1d2fa169fedd86c7&token=e7bd0ded4b516685466721253fd5d4844c32a6145d2f8aeb0f463407b1271440",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "35897a2d70c5f9be1d2fa169fedd86c7"
+						},
+						{
+							"key": "token",
+							"value": "e7bd0ded4b516685466721253fd5d4844c32a6145d2f8aeb0f463407b1271440"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/5d8b556c822d2a6efd5d7a96/cards?key=35897a2d70c5f9be1d2fa169fedd86c7&token=e7bd0ded4b516685466721253fd5d4844c32a6145d2f8aeb0f463407b1271440",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"5d8b556c822d2a6efd5d7a96",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "35897a2d70c5f9be1d2fa169fedd86c7"
+						},
+						{
+							"key": "token",
+							"value": "e7bd0ded4b516685466721253fd5d4844c32a6145d2f8aeb0f463407b1271440"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "origin",
+						"value": "https://trello.com"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "accept-language",
+						"value": "uk-UA,uk;q=0.9,ru;q=0.8,en-US;q=0.7,en;q=0.6"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "cookie",
+						"value": "dsc=82fb8d5946e45aa000e2bf5d70a2dd2317f98ea962b35572e7f40892beb89d70; lang=uk-UA; gdpr-cookie-consent=accepted; _sp_ses.dc4d=*; landing=New^%^20Landing; _ga=GA1.2.1722744474.1569481152; _gid=GA1.2.776616548.1569481152; _gcl_au=1.1.222691455.1569481153; _mkto_trk=id:594-ATC-127^&token:_mch-trello.com-1569481153054-23032; __hstc=183819321.a575df3056cdf32bc8c8352f19bfe3d2.1569481154764.1569481154764.1569481154764.1; hubspotutk=a575df3056cdf32bc8c8352f19bfe3d2; __hssrc=1; __hssc=183819321.1.1569481154768; __cid=3d0866a5-f19c-481e-bc06-e3c555023c0d-6c8bf3dd46256731248b425c; token=55bb2cf83da0f38cc01b30f5^%^2FwpYjpsLgAmuSrDUJnM5ea40ft2JGOVJ9Kg8GhPZ2vP2wvp0XPfynJxWBxr4VYAPW; hasAccount=google; ajs_group_id=null; ajs_anonymous_id=^%^22768b4611-05c5-4661-9a9a-58adee27395e^%^22; G_ENABLED_IDPS=google; mab=55bb2cf83da0f38cc01b30f5; _sp_id.dc4d=fc0346a5-67a3-49af-87a3-e93dfc2c7ba3.1569481152.1.1569482830.1569481152.550e462b-9924-4a21-8633-bc59388bca71"
+					},
+					{
+						"key": "x-trello-client-version",
+						"value": "undefined"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "referer",
+						"value": "https://trello.com/b/JKIcTYQz/homework"
+					},
+					{
+						"key": "authority",
+						"value": "trello.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idList\": \"5d8b59feda11b72e19f8856f\",\n\t\"name\": \"hi\"\n\t\n\t\n}\n\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/cards?key=35897a2d70c5f9be1d2fa169fedd86c7&token=e7bd0ded4b516685466721253fd5d4844c32a6145d2f8aeb0f463407b1271440",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "35897a2d70c5f9be1d2fa169fedd86c7"
+						},
+						{
+							"key": "token",
+							"value": "e7bd0ded4b516685466721253fd5d4844c32a6145d2f8aeb0f463407b1271440"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete card",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/5d8c6bae644b712a50ead5f0?key=35897a2d70c5f9be1d2fa169fedd86c7&token=e7bd0ded4b516685466721253fd5d4844c32a6145d2f8aeb0f463407b1271440",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"5d8c6bae644b712a50ead5f0"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "35897a2d70c5f9be1d2fa169fedd86c7"
+						},
+						{
+							"key": "token",
+							"value": "e7bd0ded4b516685466721253fd5d4844c32a6145d2f8aeb0f463407b1271440"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
