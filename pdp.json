@@ -133,7 +133,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"idList\": \"5d8b59feda11b72e19f8856f\",\n\t\"name\": \"hi\"\n\t\n\t\n}\n\n\n",
+					"raw": "{\n\t\"idList\": \"5d8b59feda11b72e19f8856f\",\n\t\"name\": \"bye\"\n\t\n\t\n}\n\n\n",
 					"options": {
 						"raw": {
 							"language": "json"
