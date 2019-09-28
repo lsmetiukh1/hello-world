@@ -1,0 +1,3 @@
+node {
+     def job = build job: 'test3'
+}
